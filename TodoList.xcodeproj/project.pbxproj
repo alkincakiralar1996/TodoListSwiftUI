@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44056FBC2A016D29003899AF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44056FBB2A016D29003899AF /* HeaderView.swift */; };
 		4423124E29FFED420034F8FC /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423124D29FFED420034F8FC /* TodoListApp.swift */; };
 		4423125029FFED420034F8FC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4423124F29FFED420034F8FC /* MainView.swift */; };
 		4423125229FFED430034F8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4423125129FFED430034F8FC /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44056FBB2A016D29003899AF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4423124A29FFED420034F8FC /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4423124D29FFED420034F8FC /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		4423124F29FFED420034F8FC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				4423126F29FFF7AA0034F8FC /* LoginView.swift */,
 				4423127129FFF7B40034F8FC /* RegisterView.swift */,
 				4423127329FFF7DC0034F8FC /* ToDoListItemView.swift */,
+				44056FBB2A016D29003899AF /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4423127029FFF7AA0034F8FC /* LoginView.swift in Sources */,
+				44056FBC2A016D29003899AF /* HeaderView.swift in Sources */,
 				4423125029FFED420034F8FC /* MainView.swift in Sources */,
 				4423126C29FFF7950034F8FC /* ToDoListView.swift in Sources */,
 				4423128429FFF85B0034F8FC /* RegisterViewModel.swift in Sources */,
