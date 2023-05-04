@@ -5,3 +5,19 @@
 // Send friend request on https://www.linkedin.com/in/alkincakiralar/ 
 
 import Foundation
+import SwiftUI
+
+class LoginViewModel: ObservableObject {
+    @Published var email = ""
+    @Published var password = ""
+    
+    init() {}
+    
+    func login() {
+        
+    }
+    
+    func validate() {
+        
+    }
+}
