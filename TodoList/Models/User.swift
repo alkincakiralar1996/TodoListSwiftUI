@@ -5,3 +5,10 @@
 // Send friend request on https://www.linkedin.com/in/alkincakiralar/ 
 
 import Foundation
+
+struct User: Codable {
+    let id: String
+    let name: String
+    let email: String
+    let joined: TimeInterval
+}
