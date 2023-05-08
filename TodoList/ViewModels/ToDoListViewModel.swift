@@ -5,3 +5,7 @@
 // Send friend request on https://www.linkedin.com/in/alkincakiralar/ 
 
 import Foundation
+
+class ToDoListViewModel: ObservableObject {
+    init() { }
+}
