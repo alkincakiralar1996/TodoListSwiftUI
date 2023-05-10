@@ -4,6 +4,8 @@
 // Follow me on https://medium.com/@acakiralar
 // Send friend request on https://www.linkedin.com/in/alkincakiralar/ 
 
+import FirebaseAuth
+import FirebaseFirestore
 import Foundation
 
 class NewItemViewModel: ObservableObject {
@@ -13,8 +15,33 @@ class NewItemViewModel: ObservableObject {
     
     init() { }
     
-    func save() {
+    func save() async {
+        guard canSave else {
+            return
+        }
         
+        // Get current user id
+        guard let uID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        // Create model
+        let newItem = ToDoListItem(
+            id: UUID().uuidString,
+            title: title,
+            dueDate: dueDate.timeIntervalSince1970,
+            createdDate: Date().timeIntervalSince1970,
+            isDone: false
+        )
+        
+        // Save model
+        let db = Firestore.firestore()
+        
+        try? await db.collection("users")
+            .document(uID)
+            .collection("todos")
+            .document(newItem.id)
+            .setData(newItem.asDictionary())
     }
     
     var canSave: Bool {
