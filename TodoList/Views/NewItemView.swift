@@ -28,8 +28,10 @@ struct NewItemView: View {
                     title: "Save",
                     background: .pink) {
                         if viewModel.canSave {
-                            viewModel.save()
-                            newItemPresented = false
+                            Task {
+                                await viewModel.save()
+                                newItemPresented = false
+                            }
                         } else {
                             viewModel.showAlert = true
                         }
