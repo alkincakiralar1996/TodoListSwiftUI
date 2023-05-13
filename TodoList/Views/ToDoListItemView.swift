@@ -7,8 +7,7 @@
 import SwiftUI
 
 struct ToDoListItemView: View {
-    @StateObject var viewModel = ProfileViewModel()
-    
+    @StateObject var viewModel = ToDoListItemViewModel()
     let item: ToDoListItem
     
     var body: some View {
